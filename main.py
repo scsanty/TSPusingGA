@@ -1,9 +1,3 @@
-"""
-Author:
-file:
-Rename this file to Lastname_Firstname_StudentNumber.py
-"""
-
 import random
 from Individual import *
 import sys
@@ -116,7 +110,7 @@ class BasicTSP:
 		self.sorted_pop 	= []
 		self.matingPool     = []
 		self.best           = None
-		self.popSize        = int(_popSize) 
+		self.popSize        = int(_popSize)
 		self.genSize        = None
 		self.crossoverProb  = float(_xoverProb)
 		self.mutationRate   = float(_mutationRate)
@@ -209,7 +203,7 @@ class BasicTSP:
 
 		if self.graphics:
 			# Plotting the initial findings
-			self.graphics.plotTravel(self.best.genes, (0, self.best.getFitness()), 
+			self.graphics.plotTravel(self.best.genes, (0, self.best.getFitness()),
 				"Best initial sol: {self.best.getFitness()}")
 
 	def updateBest(self, candidate):
@@ -221,7 +215,7 @@ class BasicTSP:
 
 			if self.graphics:
 				# Plotting the best into the graph
-				self.graphics.plotTravel(self.best.genes, (self.iteration, self.best.getFitness()), 
+				self.graphics.plotTravel(self.best.genes, (self.iteration, self.best.getFitness()),
 					f"iteration: {self.iteration} best: {round(self.best.getFitness(), 2)}")
 
 	def randomSelection(self):
@@ -350,7 +344,7 @@ class BasicTSP:
 		print ("Best Solution: ", self.best.getFitness())
 		if self.graphics:
 			# Plot the final best solution
-			self.graphics.plotTravel(self.best.genes, (self.iteration, self.best.getFitness()), 
+			self.graphics.plotTravel(self.best.genes, (self.iteration, self.best.getFitness()),
 				f"Total iterations: {self.iteration} Best: {round(self.best.getFitness(), 2)}")
 
 
@@ -425,7 +419,7 @@ if __name__ == '__main__':
 	best_route = gene_li[best_indx]
 	# Getting the best route out of all the iterations
 	best_nRun = nRun_li[best_indx]
-	
+
 	if _graphics:
 		# Plotting the best into the graph
 		graphics.nRun = best_nRun
@@ -437,4 +431,3 @@ if __name__ == '__main__':
 	with open('Final_route.txt', 'w') as f:
 		# Saving the best reoute into a file
 		f.write(f'{best_distance}\n{best_route}')
-
