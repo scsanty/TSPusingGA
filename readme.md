@@ -1,9 +1,9 @@
-To run the code:
-python main.py <inst_file> <nRuns> <nIterations> <popSize> <initalisation> <Pc> <Pm> <truncationPercentage> <elitismPercentatge>
-e.g.: -
-python main.py TSP_dataset/inst-19.tsp 10 500 100 1 0.8 0.05 0.25 0.0
+To run the code:<br>
+python main.py <inst_file> <nRuns> <nIterations> <popSize> <initalisation> <Pc> <Pm> <truncationPercentage> <elitismPercentatge> <br>
+e.g.: - <br>
+python main.py TSP_dataset/inst-19.tsp 10 500 100 1 0.8 0.05 0.25 0.0<br><br>
 
-Rules sanity checks are performed in the code:
+Rules sanity checks are performed in the code: <br>
 <inst_file>			May use absolute/relative path & it should not have spaces in between
 <nRuns>				Should not be fractions or less than 0
 <nIterations>			Should not be fractions or less than 0
