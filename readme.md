@@ -3,7 +3,8 @@ python main.py <inst_file> <nRuns> <nIterations> <popSize> <initalisation> <Pc> 
 e.g.: - <br>
 python main.py TSP_dataset/inst-19.tsp 10 500 100 1 0.8 0.05 0.25 0.0<br><br>
 
-Rules sanity checks are performed in the code: <br>
+Rules sanity checks are performed in the code:
+<pre>
 <inst_file>			May use absolute/relative path & it should not have spaces in between
 <nRuns>				Should not be fractions or less than 0
 <nIterations>			Should not be fractions or less than 0
@@ -17,3 +18,4 @@ Libraries:
 Matplotlib			external library, installation required for visualisations,
 				wouldn't fail if not found
 math, sys, random		internal libraries, no installation required.
+</pre>
